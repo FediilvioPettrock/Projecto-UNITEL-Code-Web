@@ -1,3 +1,6 @@
+body{
+overflow-x: hidden;
+}
 .dizer{
 
     font-size: 4rem;
