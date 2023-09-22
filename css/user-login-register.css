@@ -1,0 +1,108 @@
+*{
+    font-family: 'teste', sans-serif;
+}
+
+
+    nav{
+        font-family: 'teste', sans-serif;
+    }
+
+    .carousel{
+        margin-bottom: 100px;
+    }
+
+@font-face{
+    font-family: 'teste';
+    src: url('../font/Intro-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.newsletter-input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.newsletter-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter-button:hover {
+    background-color: #0056b3;
+}
+
+.fale-conosco{
+    text-align: center;
+    display: flex;
+    width: 130%;
+    height: 50%;
+    flex-direction: column;
+}
+
+.footer-vertical-line{
+    width: 1px; 
+    background-color:white; 
+}
+
+footer{
+    font-family: 'teste',sans-serif;
+    background-color: #000;
+    color: white;
+    margin-top: 100px;
+    padding-top: 90px;
+}
+
+ ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.form-component{
+ display: flex;
+ align-items: center;
+ text-align: center;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    width: 80%;
+}
+
+footer{
+    align-items: center; 
+    border-radius: 2px;
+    font-family: 'teste', sans-serif;
+}
+
+
+    
+  
+    .footericon{
+        display: flex;
+    }
+    
+    .footericon img{
+    width:20%;
+   
+    }
+    
+    .footericon ul,ol{
+    display: flex;   
+    }
