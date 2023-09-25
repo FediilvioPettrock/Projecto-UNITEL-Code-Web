@@ -74,7 +74,7 @@
         <div class="container" style="height: 100%;" id="carouselExampleControls">
     <div class="row">
       <div class="col">
-        <form style="padding-bottom:40px; ">
+        <form name="login_form" style="padding-bottom:40px;"  method="post" action="../script/uservalidation.php">
             <div style="text-align: center;">
                 <img src="../img/login2.png" alt=""style="height: 50px; width: 50px">
                 <label"><h2>Login</h2></label>
@@ -82,18 +82,18 @@
          
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input name="login_email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
               
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">PassWord</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label" >PassWord</label>
+              <input name="login_password" type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <input name="login_remember" type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Lembrar Password</label>
             </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button name="login_submission" type="submit" class="btn btn-primary">Entrar</button>
           </form>      
       </div>
       <div class="col">
@@ -113,7 +113,7 @@
     <div class="row">
 
       <div class="col">
-        <form>
+        <form name="logon_form" action="../script/uservalidation.php" method="post">
             <div style="text-align: center;">
                 <img src="../img/login2.png" alt=""style="height: 50px; width: 50px">
                 <label"><h2>Cadastro</h2></label>
@@ -121,29 +121,29 @@
          
             <div class="row g-3" style=" padding-bottom: 5px;">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+                  <input name="logon_firstname" type="text" class="form-control" placeholder="Nome" aria-label="First name">
                 </div>
 
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Apelido" aria-label="Last name">
+                  <input name="logon_nickname" type="text" class="form-control" placeholder="Apelido" aria-label="Last name">
                 </div>
               </div>
 
               <div class="row g-3" style=" padding-bottom: 19px;">
                 <div class="col">
-                  <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+                  <input name="logon_email" type="email" class="form-control" placeholder="Email" id="inputEmail4">
                 </div>
                 <div class="col">
-                  <input type="password" class="form-control" placeholder="PassWord" id="inputPassword4">
+                  <input name="logon_password" type="password" class="form-control" placeholder="PassWord" id="inputPassword4">
                 </div>
               </div>
 
               <div class="row g-3" style=" padding-bottom: 19px;">
                 <div class="col">
-                  <input type="tel" class="form-control" placeholder="Telefone">
+                  <input name="logon_tel" type="tel" class="form-control" placeholder="Telefone">
                 </div>
                 <div class="col">
-                    <select id="inputState" class="form-select">
+                    <select name="logon_sexo" id="inputState" class="form-select">
                         <option selected>Sexo</option>
                         <option>Masculino</option>
                         <option>Femenino</option>
@@ -153,9 +153,9 @@
               </div>
              <div class="col" style="padding-bottom: 19px;">
                     <label for="date" class="form-label">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="date">
+                    <input name="logon_data" type="date" class="form-control" id="date">
                 </div>
-                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                  <button name="logon_submission" type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
               </form>
           </form>
